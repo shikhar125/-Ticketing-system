@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Help Desk Ticketing System</h1>
+        
+        <!-- Ticket Submission Form -->
+        <div class="form-container">
+            <h2>Submit a Ticket</h2>
+            <form id="ticketForm">
+                <label for="ticketTitle">Title:</label>
+                <input type="text" id="ticketTitle" required>
+                
+                <label for="ticketDescription">Description:</label>
+                <textarea id="ticketDescription" required></textarea>
+                
+                <button type="submit">Submit Ticket</button>
+            </form>
+        </div>
+
+        <!-- Ticket List -->
+        <div class="ticket-list">
+            <h2>Submitted Tickets</h2>
+            <ul id="ticketList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
